@@ -23,8 +23,7 @@ jobs:
           pip install -r requirements.txt
       - name: Lint with flake8
         run: |
-          flake8 . --max-line-length=84
-        continue-on-error: true
+          flake8 . --max-line-length=92
       - name: Lint with black
         run: |
           black --check .
