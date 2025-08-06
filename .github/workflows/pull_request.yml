@@ -71,6 +71,8 @@ jobs:
           DJANGO_SETTINGS_MODULE: myproject.settings
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
         run: |
+          echo $PWD
+          ls 
           python manage.py migrate
 
       - name: Run tests
