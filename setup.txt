@@ -13,5 +13,7 @@ Project Health
 app 
 
 
-cd mkdir Meshwork_Health
+mkdir Meshwork_Health
 django-admin startproject Health Meshwork_Health
+cd Meshwork_Health
+python manage.py startapp batteries
