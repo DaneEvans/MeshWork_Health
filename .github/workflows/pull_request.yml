@@ -66,12 +66,12 @@ jobs:
             sleep 1
           done
 
-      # - name: Run migrations
-      #   env:
-      #     DJANGO_SETTINGS_MODULE: myproject.settings
-      #     DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
-      #   run: |
-      #     python manage.py migrate
+      - name: Run migrations
+        env:
+          DJANGO_SETTINGS_MODULE: myproject.settings
+          DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
+        run: |
+          python manage.py migrate
 
       - name: Run tests
         env:
