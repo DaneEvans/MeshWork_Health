@@ -68,7 +68,7 @@ jobs:
 
       - name: Run migrations
         env:
-          DJANGO_SETTINGS_MODULE: Health.settings
+          DJANGO_SETTINGS_MODULE: Meshwork_Health.settings
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
         run: |
           echo $PWD
@@ -77,7 +77,7 @@ jobs:
 
       - name: Run tests
         env:
-          DJANGO_SETTINGS_MODULE: Health.settings
+          DJANGO_SETTINGS_MODULE: Meshwork_Health.settings
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
         run: |
           python manage.py test
