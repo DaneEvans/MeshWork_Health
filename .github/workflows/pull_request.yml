@@ -73,11 +73,11 @@ jobs:
         run: |
           echo $PWD
           ls 
-          python manage.py migrate
+          python Meshwork_Health/manage.py migrate
 
       - name: Run tests
         env:
           DJANGO_SETTINGS_MODULE: Meshwork_Health.settings
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/test_db
         run: |
-          python manage.py test
+          python Meshwork_Health/manage.py test
